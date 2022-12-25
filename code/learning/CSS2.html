@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS2</title>
+    <style>
+        .nspan{
+            display: block;
+        }
+        .float{
+            width: 300px;
+            height: 300px;
+            border: black solid 2px
+        }
+        .left{
+            width: 30px;
+            height: 30px;
+            border: gold solid 2px;
+            margin: 10px;
+            float: left;
+        }
+        .main{
+            width: 80px;
+            height: 20px;
+            border: violet solid 2px;
+            margin: 10px;
+            float: right;
+        }
+        .bottom{
+            width: 100px;
+            height: 80px;
+            border: 2px solid tomato;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        div
+        inline html elements
+            span
+            block-level element
+            display
+                block
+                inline
+        float
+        clear
+        hover
+        position: fixed
+            top right bot lef
+        position: absolute định vị theo vị trí của một thẻ khác
+     -->
+     <span class="nspan">Hello world</span>
+     <span class="nspan">Hello world</span>
+    <h1>CSS2</h1>
+    <div>
+        <ul>
+            <li>Hello 1</li>
+            <li>Hello 2</li>
+            <li>Hello 3</li>
+        </ul>
+    </div>
+    <div class="float">
+        <div class="left"></div>
+        <div class="main"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>

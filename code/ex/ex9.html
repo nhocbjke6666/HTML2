@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap6</title>
+    <style>
+        #head{
+            height: 100px;
+            border: 2px solid lightgrey;
+            background-color: lightgrey;
+            margin-bottom: 4px;
+        }
+        #head-link{
+            height: 20px;
+            border: 2px solid lightgrey;
+            background-color: lightgrey;
+            margin-bottom: 2px;
+        }
+        #left{
+            width: 150px;
+            height: 600px;
+            border: 2px solid lightgrey;
+            background-color: lightgrey;
+            margin-right: 2px;
+            margin-bottom: 4px;
+            float: left;
+        }
+        #content{
+            width: 550px;
+            height: 600px;
+            border: 2px solid lightgrey;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #form{
+            width: 500px;
+            padding: 0px 10px 10px 20px;
+        }
+        #right{
+            width: 300px;
+            height: 600px;
+            border: 2px solid lightgrey;
+            background-color: lightgreen;
+            float: right;
+        }
+        #bottom{
+            height: 50px;
+            border: 2px solid lightgrey;
+            background-color: lightgrey;
+            clear: both;
+        }
+        #menu{
+            padding: 0px;
+            margin-top: 2px;
+        }
+        #menu li{
+            float: left;
+            list-style: none;
+            position: relative;
+        }
+        #menu li a{
+            text-decoration: none;
+            text-align: center;
+            width: 100px;
+            display: block;
+            color: black;
+        }
+        #menu ul li a{
+            width: 120px;
+            background-color: lightgrey;
+            text-align: left;
+            padding-left: 20px;
+        }
+        #menu li a:hover{
+            background-color: lightskyblue;
+        }
+        #menu ul{
+            position: absolute;
+            top: 18px;
+            left: -40px;
+        }
+        #menu ul{
+            visibility: hidden;
+        }
+        #menu li:hover ul{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 1016px; margin-left: auto; margin-right: auto;">
+        <div id="head"></div>
+        <div id="head-link">
+            <ul id="menu">
+                <li><a href="#">Tutorials</a>
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">Javarscript</a></li>
+                    </ul>
+                </li>
+                <li><A href="#">Refrences</a>
+                    <ul>
+                        <li><a href="#">Server Side</a></li>
+                        <li><a href="#">Character Sets</a></li>
+                        <li><a href="#">Programing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Exercises</a>
+                    <ul>
+                        <li><a href="#">Exercises</a></li>
+                        <li><a href="#">Quizz</a></li>
+                        <li><a href="#">Courses</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="left"></div>
+        <div id="content">
+            <form action="#" id="form">
+                <h1>Zoo Keeper Application Form</h1>
+                <p style="font-style: italic;">Please completed the form. Mandatory fields are marked with a <span style="color: red;">*</span></p>
+                <fieldset>
+                    <legend>CONTACT DETAILS</legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="">Name <span style="color: red;">*</span></label>
+                                </td>
+                                <td>
+                                    <input type="text" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="">Telephone</label>
+                                </td>
+                                <td>
+                                    <input type="tel">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px;">
+                                    <label for="">Email <span style="color: red;">*</span></label>
+                                </td>
+                                <td >
+                                    <input type="email" required>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>PERSONAL INFORMATION</legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="">Age <span style="color: red;">*</span></label>
+                                </td>
+                                <td>
+                                    <input type="number">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="">Gender</label>
+                                </td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">Female</option>
+                                        <option value="">Male</option>
+                                        <option value="">Other</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px;">
+                                    <label for="">
+                                        When did you first know you wanted to be a zoo-keeper?
+                                    </label>
+                                </td>
+                                <td>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>PICK YOU FAVORITE ANIMALS</legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> Zebra
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Cat
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Anacoda
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Human
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox"> Elephant
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Wildeleest
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Pigeon
+                                </td>
+                                <td>
+                                    <input type="checkbox"> Crab
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <input type="submit" value="Submit Application">
+        </div>
+        <div id="right"></div>
+        <div id="bottom"></div>
+    </div>
+</body>
+</html>
