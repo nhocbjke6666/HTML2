@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS3</title>
+</head>
+<body>
+    <!-- 
+        Var : Khai báo biến
+        document.getElementById() :  
+            .value
+        script 
+            function
+                document.getElementById
+                document.write
+                alert
+                confirm
+     -->
+    <input type="text" placeholder="fullname" id="idfullname">
+    <input type="email" placeholder="Email" id="idEmail">
+    <input type="password" placeholder="Password" id="idPassword">
+    <input type="button" value="Login" onclick="getInfor()">
+    <input type="button" value="Clear" onclick="hdClear()">
+    <script>
+        function getInfor(){
+            var fullname = document.getElementById("idfullname").value
+            var email = document.getElementById("idEmail").value
+            var password = document.getElementById("idPassword").value
+            alert(fullname + " - " + email + " - " + password)
+        }
+        function hdClear(){
+            document.getElementById("idfullname").value = ""
+            document.getElementById("idEmail").value = ""
+            document.getElementById("idPassword").value = ""
+        }
+    </script>
+</body>
+</html>

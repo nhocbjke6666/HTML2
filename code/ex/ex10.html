@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        h2{
+            margin-bottom: 4px;
+            color: slateblue;
+        }
+        .row{
+            display: block;
+            margin-bottom: 5px;
+        }
+        .row input{
+            text-align: right;
+            margin-left: 6px;
+        }
+        .row button{
+            border: 2px solid tomato;
+            background-color: tomato;
+            border-radius: 6px;
+        }
+        table{
+            border: 3px solid yellowgreen;
+            border-radius: 5px;
+            background-color: lightgreen;
+        }
+        #idResult1{
+            padding-left: 15px;
+            padding-top: 5px;
+            color: crimson;
+            float: left;
+        }
+        #idResult2{
+            float: right;
+            padding-top: 5px;
+            padding-right: 15px;
+        }
+        hr{
+            background-color: rebeccapurple;
+            height: 2px;
+            border: rebeccapurple;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Calculator</h2>
+    <table>
+        <tr class="row">
+            <td>
+                <input type="number" id="idNum1">
+            </td>
+            <td>
+                <input type="number" id="idNum2">
+            </td>
+        </tr>
+        <tr class="row">
+            <td>
+                <button onclick="hdAdd()">Addition(+)</button>
+            </td>
+            <td>
+                <button onclick="hdSub()">Subtraction(-)</button>
+            </td>
+            <td>
+                <button onclick="hdMul()">Multiplication(X)</button>
+            </td>
+            <td>
+                <button onclick="hdDiv()">Division(/)</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <hr>
+            </td>
+        </tr>
+        <tr class="row">
+            <td id="idResult1"><b>Result : </b></td>
+            <td id="idResult2"><b></b></td>
+        </tr>
+    </table>
+    <script>
+        function hdAdd(){
+            let num1 = document.getElementById("idNum1").value;
+            let num2 = document.getElementById("idNum2").value;
+            let Result = Number(num1) + Number(num2);
+            document.getElementById('idResult2').innerText = Result;
+        }   
+        function hdSub(){
+            let num1 = document.getElementById("idNum1").value;
+            let num2 = document.getElementById("idNum2").value;
+            let Result = Number(num1) - Number(num2);
+            document.getElementById('idResult2').innerText = Result;
+        }  
+        function hdMul(){
+            let num1 = document.getElementById("idNum1").value;
+            let num2 = document.getElementById("idNum2").value;
+            let Result = Number(num1) * Number(num2);
+            document.getElementById('idResult2').innerText = Result;
+        }  
+        function hdDiv(){
+            let num1 = document.getElementById("idNum1").value;
+            let num2 = document.getElementById("idNum2").value;
+            let Result = Number(num1) / Number(num2);
+            document.getElementById('idResult2').innerText = Result;
+        }       
+    </script>
+</body>
+</html>

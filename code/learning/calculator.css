@@ -1,0 +1,36 @@
+.calculator{
+    width: 300px;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+.form-group{
+    display: flex;
+    margin: 2px 0px;
+}
+.form-group>label{
+    color: white;
+    width: 80px;
+}
+
+.form-control{
+    width: 220px;
+    padding: 5px 2px;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    background-color: orange;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: darkorange;
+    transform: scale(.95);
+    transition: .2s;
+}

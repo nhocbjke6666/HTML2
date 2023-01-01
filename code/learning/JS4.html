@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM and BOM</title>
+    <style>
+        .btn-danger{
+            border: none;
+            outline: none;
+            color:white;
+            background-color:  rgb(220, 53, 69);
+            /* background-color: rgb(255, 0, 0); */
+            margin: 4px 2px;
+            padding: 6px 20px;
+            font-size: 16px;
+            font-family:'Courier New', Courier, monospace;
+            border: 1px solid transparent;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-danger">Danger</button>
+    <!-- javascript tương tác với element thông que event (sự kiện) của element -->
+    <div class="post">
+        <h1 class="heading_1" onclick="document.getElementById('p1').style.color = 'red'"
+            ondblclick="document.getElementById('p1').style.color = 'black'"
+        >Chapter 1</h1>
+        <div class="post-detail">
+            <h3 class="heading_2" onclick="this.style.backgroundColor = 'green'; this.style.color = 'white'">Khoa Nguyễn</h3>
+            <p id="p1" class="para">Description</p>
+            <input type="text" id="name" onfocus="focusName()">
+        </div>
+    </div>
+    <div>
+        <label for="">Password</label>
+        <input type="password" id="pw">
+        <button id="btnPassword" onclick="showPassword()">Show</button>
+    </div>
+    <script>
+        function focusName(){
+            document.getElementById('name').style.padding = "20px";
+            document.getElementById('name').style.width = "300px";
+            document.getElementById('name').style.border = "none";
+            document.getElementById('name').style.outline = "none";
+            document.getElementById('name').style.border = "2px solid orange";
+            document.getElementById('name').style.borderRadius = "10px 0px";
+            document.getElementById('name').style.boxShadow = "3px 3px 10px red";
+        }
+
+        function showPassword(){
+            if(document.getElementById('pw').type == 'password'){
+                document.getElementById('pw').type = 'text';
+                document.getElementById('btnPassword').innerText = 'Hide';
+            }
+            else{
+                document.getElementById('pw').type = 'password';
+                document.getElementById('btnPassword').innerText = 'Show';
+            }
+        }
+    </script>
+</body>
+</html>
