@@ -83,7 +83,7 @@
 // findSquareNumbers(numbers);
 
 // function findLastEvenNumber(arr){
-//     evenNumber = null;
+//     let evenNumber = null;
 //     for (let i=0;i<arr.length;i++){
 //         if (arr[i] % 2 == 0){
 //             evenNumber = arr[i];
@@ -100,7 +100,7 @@
 // let numbers2 = createArray(10,10,20);
 // console.log(numbers2);
 // function joinTotal(arr1, arr2){
-//     total = "";
+//     let total = "";
 //     for (let i=0;i<arr1.length;i++){
 //         total += arr1[i]
 //     }
@@ -112,7 +112,7 @@
 // console.log(joinTotal(numbers, numbers2));
 
 // function findNumberInArray(number, arr) {
-//     check = 0;
+//     let check = 0;
 //     for (let i=0;i<arr.length;i++){
 //         if (number==arr[i]){
 //             return `Trong mảng có số ${number}`;
@@ -124,3 +124,38 @@
 //     }
 // }
 // console.log(findNumberInArray(5, numbers));
+
+// function findPrime(arr) {
+//     for (let i=0;i<arr.length;i++){
+//         let d = 1;
+//         for (let j=2;j<=arr[i];j++){
+//             if (arr[i]%j==0){
+//                 d++;
+//             }    
+//         }
+//         if (d==2){
+//             console.log(arr[i]);
+//         }
+//     }    
+// }
+// findPrime(numbers);
+
+// Arrow function, hàm vô danh (Anonymous function)
+// let sum1 = (a,b) =>{
+//     return a+b;
+// }
+// console.log(sum1(5,5));
+
+// Xài hàm có sẵn
+// const fruits = ['apple','orange','cherry']
+// fruits.forEach((item, index) => {
+//     console.log(`${item} - ${index}`);
+// });
+
+// Bài tập: Tìm hiểu hàm map, find, forEach
+
+// star = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"]
+// Constellation
+// function findConstellation(arr) {
+
+// }
