@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop1</title>
+</head>
+<body>
+    <!-- Vòng lặp for
+        Bài 1
+    <script>
+        for (let i=0;i<5;i++)
+            console.log(`The number is ${i}`)
+    </script> -->
+
+    <!-- Bài 2
+    <script>
+        let n = +prompt('Nhập số n: ')
+        var s = 0
+        for (let i=0;i<=n;i++)
+            s+=i;
+        alert(`Tổng s là: ${s}`)
+    </script> -->
+
+
+    <!-- Vòng lặp while
+        Bài 1
+    <script>
+        var n = 0;
+        var s = 0;
+        while (n!=-1) {
+            s+=n;
+            n = +prompt('Nhập giá trị n: ');
+        }
+        alert(`Tổng s là ${s}`);
+    </script> -->
+
+    <!-- Bài 2
+    <script>
+        let i=1;
+        var s='';
+        while (i<=100){
+            s=s+`<hr width="${i}">`
+            i++;
+        }
+        document.write(s)
+    </script> -->
+
+
+    <!-- Vòng lặp do while
+    <script>
+        var n = 0;
+        do{
+            n = +prompt('Nhập số n: ')
+            console.log(n);
+        }while (n<=10 && n>=0)
+    </script> -->
+
+    <!-- Vòng lặp lồng nhau
+    <script>
+        do {
+            n = +prompt('Nhập số n: ');
+            m = +prompt('Nhập số m: ');
+        } while (n<=0 || m<=0);
+        var d = 1;
+        var s = '<table border="1">';
+        for (let i=1;i<=n;i++){
+            s = s + '<tr>';
+            for (let j=1;j<=m;j++){
+                s = s + `<td>${d}</td>`;
+                d++;
+            }
+            s = s + "</tr>"
+        }
+        s = s + '</table>'
+        document.write(s)
+    </script> -->
+</body>
+</html>
