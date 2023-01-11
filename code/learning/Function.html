@@ -5,7 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function</title>
-    <script src="Function.js"></script>
+    <style>
+        .container{
+            width: 400px;
+        }
+        .stdId{
+            width: 20%;
+            float: left;
+        }
+        .stdName{
+            width: 80%;
+            float: left;
+        }
+    </style>
 </head>
 <body>
     <!-- 
@@ -22,7 +34,37 @@
         }
         call function, invoke function : gọi hàm
         tenHam([parameter])
-        
      -->
+    <div class="container" border="1">
+        <div class="header">
+            <h1>JS1222I1</h1>
+        </div>
+        <div>
+            <label for="">Nhập tên: </label>
+            <input type="text" placeholder="..." id="idNameAdd">
+            <input type="button" value="Add" onclick="hdAdd()">
+            <input type="button" value="Del" onclick="hdDel()">
+        </div>
+        <div class="main">
+            <div class="row head">
+                <label for="" class="stdId">STT</label>
+                <label for="" class="stdName">Name</label>
+            </div>
+        <div id="main-contain">
+            <div class="row">
+                <label for="" class="stdId">1</label>
+                <label for="" class="stdName">Anh Tài</label>
+            </div>
+            <div class="row">
+                <label for="" class="stdId">2</label>
+                <label for="" class="stdName">Văn Vỹ</label>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <script src="Function.js"></script>
 </body>
 </html>

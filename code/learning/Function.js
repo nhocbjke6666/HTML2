@@ -159,3 +159,59 @@
 // function findConstellation(arr) {
 
 // }
+
+// Tham chiếu
+// Khi truyền mảng, đối tượng vào hàm thì bên trong hàm thay đổi thì bên ngoài thay đổi theo
+// const fruits = ['Cam', 'Xoài', 'Quýt'];
+// function changeArray(arr){
+//     arr[1] = 'Xoài non'
+// }
+// changeArray(fruits);
+// console.log(fruits);
+
+// Tham trị : sao chép giá trị
+// Truyền tham trị, bên trong hàm thay đổi thì bên ngoài vẫn không đổi
+// let a = 5;
+// function changeValue(a){
+//     a = 10;
+// }
+// console.log(a);
+
+// File Html
+
+let std = ['Anh Tài', 'Văn Vỹ', "Su Bo"];
+
+function renderStd() {
+    let str = '';
+    for (let i = 0; i < std.length; i++) {
+        str += `<div class="row">
+                <label for="" class="stdId">${i + 1}</label>
+                <label for="" class="stdName">${std[i]}</label>
+            </div>`;
+    }
+    document.getElementById("main-contain").innerHTML = str;
+}
+renderStd();
+console.log(std);
+// window.onload = ()=>{
+//     document.getElementById("main-contain").innerHTML = str;
+// }
+
+function hdAdd() {
+    let txtName = document.getElementById('idNameAdd').value;
+    std.push(txtName);
+    renderStd();
+}
+
+function hdDel() {
+    let txtName = document.getElementById('idNameAdd').value;
+    let d = 0;
+    for (let i=0;i<std.length;i++) {
+        if (std[i]==txtName) {
+            std.splice(i,1);
+            d = 1;
+        }
+    }
+    if (d==0) alert("Không có người này trong danh sách!!!")
+    renderStd();
+}
