@@ -45,12 +45,12 @@ console.log(total);
 
 
 let m1 = 1;
-let d = 0;
-let sameHobbies = [];
-let name1 = "";
-let name2 = "";
 for (let i = 0; i < stds.length; i++) {
     for (let m = m1; m < stds.length; m++) {
+        let d = 0;
+        let sameHobbies = [];
+        let name1 = "";
+        let name2 = "";
         for (let j = 0; j < stds[i].hobbies.length; j++) {
             for (let n = 0; n < stds[m].hobbies.length; n++) {
                 if (stds[m].hobbies[n] == stds[i].hobbies[j]) {
@@ -63,10 +63,6 @@ for (let i = 0; i < stds.length; i++) {
         }
         if (d > 0) {
             console.log(`${name1} có ${d} sở thích giống với ${name2} đó là: ${sameHobbies.join(", ")}`);
-            d = 0;
-            sameHobbies = [];
-            name1 = "";
-            name2 = "";
         }
     }
     m1++;
